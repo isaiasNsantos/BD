@@ -10,10 +10,10 @@ connection = sqlite3.connect('title.db')
 é um interador que permite navegar e 
 manipular os registros em um BD
 '''
-curso = connection.cursor()
+cursor = connection.cursor()
 
 # 3 - Criando a tabela
-curso.execute('''
+cursor.execute('''
     CREATE TABLE movies(
         id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
         name TEXT NOT NULL,
