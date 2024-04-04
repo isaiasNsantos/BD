@@ -12,7 +12,6 @@ manipular os registros em um BD
 cursor = connection.cursor()
 
 # 3 inserindo dados 
-
 cursor.execute('''
     INSERT INTO movies (name, year, score)
     VALUES ("Super Mario", 2023, 10) 
